@@ -1,11 +1,15 @@
-import type { FC } from "react";
+import type { FC } from 'react';
+import { env } from '@/env';
+
+import { HelloWorldLabel } from './_components/hello-world-label';
 
 const Home: FC = () => {
   return (
     <main>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl font-bold">Hello World 2</h1>
+          <HelloWorldLabel />
+          <p className="">{env.DEBUG_URL}</p>
         </div>
       </div>
     </main>
