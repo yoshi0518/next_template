@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint --fix",
     "fmt": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.6",
@@ -31,6 +32,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "eslint-plugin-unicorn": "^56.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.5.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5"
