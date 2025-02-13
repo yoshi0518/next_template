@@ -3,15 +3,15 @@ import { z } from 'zod';
 
 export const env = createEnv({
   server: {
-    DEBUG_URL: z.string().url(),
-    NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
+    ENV: z.enum(['prod', 'dev']).default('dev'),
+    DEBUG: z.string().default('true'),
   },
   client: {
     // NEXT_PUBLIC_xxxxx: z.string(),
   },
   runtimeEnv: {
-    DEBUG_URL: process.env.DEBUG_URL,
-    NODE_ENV: process.env.NODE_ENV,
+    ENV: process.env.ENV,
+    DEBUG: process.env.DEBUG,
   },
   skipValidation: !!process.env.SKIP_ENV_VALIDATION,
   emptyStringAsUndefined: true,

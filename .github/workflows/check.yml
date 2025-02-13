@@ -32,8 +32,8 @@ jobs:
           pnpm-version: ${{ env.PNPM_VERSION }}
       - run: pnpm run lint
         env:
-          DEBUG_URL: ${{ secrets.DEBUG_URL }}
-          NODE_ENV: ${{ secrets.NODE_ENV }}
+          ENV: ${{ secrets.ENV_DEV }}
+          DEBUG: ${{ secrets.DEBUG_DEV }}
 
   format:
     needs: setup

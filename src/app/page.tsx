@@ -9,7 +9,8 @@ const Home: FC = () => {
       <div className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center">
           <HelloWorldLabel />
-          <p className="">{env.DEBUG_URL}</p>
+          <p>ENV：{env.ENV}</p>
+          <p>DEBUG：{env.DEBUG}</p>
         </div>
       </div>
     </main>
