@@ -58,6 +58,8 @@ Settings => Secrets and variables => Actions => New repository secret
 
 3. VercelのGithubリポジトリ連携を解除
 
+4. GithubActionsデプロイをRe-run all jobsで実行
+
 ## 参考
 
-- GitHub Actions で継続的デリバリー https://zenn.dev/hayato94087/books/6a55108faa37ba/viewer/h030ni8p32akv6p4
+- GitHub Actions で継続的デリバリー<br> https://zenn.dev/hayato94087/books/6a55108faa37ba/viewer/h030ni8p32akv6p4
