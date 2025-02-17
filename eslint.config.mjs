@@ -65,6 +65,7 @@ const eslintConfig = [
       'postcss.config.mjs',
       'tailwind.config.ts',
       'playwright.config.ts',
+      '**/manifest.ts',
     ],
     rules: {
       'import/no-default-export': 'off',
