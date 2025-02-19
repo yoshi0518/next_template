@@ -66,6 +66,8 @@ const eslintConfig = [
       'tailwind.config.ts',
       'playwright.config.ts',
       '**/manifest.ts',
+      '.storybook/*',
+      '**/*.stories.ts',
     ],
     rules: {
       'import/no-default-export': 'off',
@@ -73,7 +75,7 @@ const eslintConfig = [
     },
   },
   {
-    ignores: ['src/components/ui/*', '*.md'],
+    ignores: ['src/components/ui/*', 'src/stories/*', '*.md'],
   },
 ];
 

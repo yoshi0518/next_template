@@ -36,6 +36,9 @@ $ pnpm fmt:fix
 
 # Typecheck
 $ pnpm typecheck
+
+# Storybook
+$ pnpm storybook
 ```
 
 ### 自動デプロイ設定
